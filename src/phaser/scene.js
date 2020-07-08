@@ -1,6 +1,7 @@
 import Phaser from "phaser";
 import desk from "../assets/super_silla.png";
 import fondo from "../assets/noche.png"
+import papel from ".../assets/Papel.png"
 
 let cursors
 let silla
@@ -19,6 +20,7 @@ class playGame extends Phaser.Scene {
   }
   create() {
     const noche = this.add.image(0, 0, 'noche').setOrigin(0).setScale(1);
+    const papel = this.add.image(200, 568, 'papel').setOrign(0).setScale(1);
     silla = this.physics.add.sprite(400, 450, 'silla');
    
     silla.setBounce(0.8);
