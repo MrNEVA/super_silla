@@ -11,13 +11,13 @@ export const config = {
   parent: "phaser",
   width: 720,
   height: 720,
-   physics: {
-        default: 'arcade',
-        arcade: {
-            gravity: { y: 300 },
-            debug: false
-        }
-    },
+  physics: {
+    default: "arcade",
+    arcade: {
+      gravity: { y: 1000 },
+      debug: false
+    }
+  },
   scene: playGame
 };
 
